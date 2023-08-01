@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             int id = v.getId();
             if(id == R.id.btCalc){
                 int age = Integer.parseInt(input_age.getText().toString());
-                if(age <= 16){
+                if(age < 16){
                     BMIDialogFragment dialogFragment = new BMIDialogFragment();
                     dialogFragment.show(getSupportFragmentManager(),"BMIDialogFragment");
                 }
